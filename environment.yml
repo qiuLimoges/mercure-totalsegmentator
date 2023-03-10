@@ -1,0 +1,19 @@
+name: mercure-totalsegmentator
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - dcm2niix
+  - pydicom
+  - pytorch
+  - torchvision
+  - jupyterlab
+  - cudatoolkit=11.1
+  - pip
+  - pip :
+    - scikit-learn 
+    - TotalSegmentator
+    - monai-deploy-app-sdk
+    - highdicom
+    - rt-utils
+
