@@ -14,6 +14,7 @@ dependencies:
     - scikit-learn 
     - TotalSegmentator
     - monai-deploy-app-sdk
+    - typeguard~=2.12.1 # Work around MONAI requirements.txt bug that picks up the wrong typeguard version
     - highdicom
     - rt-utils
 
