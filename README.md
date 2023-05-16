@@ -1,7 +1,8 @@
 # **mercure-totalsegmentator**
 <br>
 
-Mercure module to deploy [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) tool for segmentation of 104 classes in CT images. This module runs as a docker container in mercure, it can be added to an existing mercure installation using docker tag : mercureimaging/mercure-totalsegmentator. The current version of the module is configured to run the TotalSegmentator at at lower resolution (3mm) so it is CPU compatible. To run at high resolution, minor code edits are required to remove the --fast TotalSegmentator option and enable GPU processing if desired.
+Mercure module to deploy [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) tool for segmentation of 104 classes in CT images. This module runs as a docker container in mercure, it can be added to an existing mercure installation using docker tag : *mercureimaging/mercure-totalsegmentator*. 
+The current version of the module is configured to run the TotalSegmentator at at lower resolution (3mm) so it is CPU compatible. To run at high resolution, minor code edits are required to remove the --fast TotalSegmentator option and enable GPU processing if desired.
 
 <br>
 
@@ -10,7 +11,7 @@ Mercure module to deploy [TotalSegmentator](https://github.com/wasserth/TotalSeg
 
 
 ## Add module to existing Mercure installation
-Follow instructions on [Mercure website](https://mercure-imaging.org) on how to add a new module. Use the docker tag mercureimaging/mercure-totalsegmentator.
+Follow instructions on [Mercure website](https://mercure-imaging.org) on how to add a new module. Use the docker tag *mercureimaging/mercure-totalsegmentator*.
 
 <br>
 
@@ -19,7 +20,7 @@ Follow instructions on [Mercure website](https://mercure-imaging.org) on how to 
 
 <br>
 
-Install [virtual box](https://www.virtualbox.org/) and [vagrant](https://www.vagrantup.com/) and follow jupyter notebook tutorial 'tutorial_mercure-totalsegmentator.ipynb' above.
+Install [virtual box](https://www.virtualbox.org/) and [vagrant](https://www.vagrantup.com/) and follow jupyter notebook tutorial *tutorial_mercure-totalsegmentator.ipynb* above.
 
 <br>
 
