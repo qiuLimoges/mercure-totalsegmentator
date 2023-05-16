@@ -6,7 +6,7 @@ from pathlib import Path
 
 # generate DICOM RT struct file for segmentations
 # code resused / adapted from TOTALSegmentator- AIDE, see https://github.com/GSTT-CSC/TotalSegmentator-AIDE
-# Adapted to work with --ml 
+# Adapted to work with --ml TOTALSegmentator option
 import os.path
 from os import listdir
 from os.path import isfile, join

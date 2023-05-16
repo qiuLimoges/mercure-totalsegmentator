@@ -78,7 +78,7 @@ class MaskedDICOMWriterOperator(Operator):
                             "0010|0010",  # Patient Name
                             "0010|0020",  # Patient ID
                             "0010|0030",  # Patient Birth Date
-                            "0020|000D",  # Study Instance UID, for machine consumption
+                            "0020|000d",  # Study Instance UID, for machine consumption
                             "0020|0010",  # Study ID, for human consumption
                             "0008|0020",  # Study Date
                             "0008|0030",  # Study Time

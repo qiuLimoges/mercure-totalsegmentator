@@ -57,18 +57,11 @@ class Dcm2NiiOperator(Operator):
             if not f.endswith('.json'):
                 shutil.move(os.path.join(input_path, f), dcm_input_path)
 
-        # # init nii_processing directory
-        # nii_path = os.path.join(input_path, 'nii_processing')
-        # if not os.path.exists(nii_path):
-        #     os.makedirs(nii_path)
+        
         print(dcm_input_path)
         # Run dcm2niix
         subprocess.run(["dcm2niix", "-z", "y", "-o", nii_input_path, "-f", "input-ct-dataset", dcm_input_path])
 
-        # Delete superfluous .json files
-        # json_files = glob.glob(input_path + "/*.json")
-        # for json_file in json_files:
-        #     os.remove(json_file)
 
         # Set output path for next operator
         op_output.set(DataPath(current_dir))

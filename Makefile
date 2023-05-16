@@ -1,2 +1,2 @@
 build:
-	docker build . -t jmsocallaghan/mercure-totalsegmentator:latest
+	docker build . -t mercureimaging/mercure-totalsegmentator:latest

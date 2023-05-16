@@ -2,7 +2,7 @@ name: mercure-totalsegmentator
 channels:
   - conda-forge
 dependencies:
-  - python=3.7
+  - python=3.9
   - dcm2niix
   - pydicom
   - pytorch

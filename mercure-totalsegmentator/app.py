@@ -1,3 +1,18 @@
+#TotalSegmentator App for mercure-totalsegmentator module
+
+# TotalSegmentator (https://github.com/wasserth/TotalSegmentator) is a software tool for segmentation of anatomical structures 
+# in CT images and is distributed under the Apache 2.0 licence. The original creators of TotalSegmentator were not involved in 
+# creation of the code in this app.
+
+# This TotalSegmentator App folllows the MONAI Deploy SDK framework and contains code reused / adapted from the 
+# TOTALSegmentator-AIDE app (https://github.com/GSTT-CSC/TotalSegmentator-AIDE)
+# Modifications include :
+# -Adaption of total_segmentator_operator.py to run --fast and --ml options of TotalSegmentator software
+# -Modification of dcm2nii_operator.py to run in mercure module environment
+# -Modification of rtstruct_writer_operator.py to loop through segmentations in single nii file
+# -Additional operators for DICOM SEG and RGB DICOM output formats
+
+
 import logging
 import monai.deploy.core as md
 from monai.deploy.core import (

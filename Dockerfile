@@ -10,7 +10,7 @@ ADD mercure-totalsegmentator ./mercure-totalsegmentator
 RUN chmod 777 ./docker-entrypoint.sh
 
 
-RUN conda create -n env python=3.7
+RUN conda create -n env python=3.9
 RUN echo "source activate env" > ~/.bashrc
 ENV PATH /opt/conda/envs/env/bin:$PATH
 RUN chmod -R 777 /opt/conda/envs
