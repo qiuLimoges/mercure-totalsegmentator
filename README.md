@@ -21,7 +21,7 @@ Follow instructions on [Mercure website](https://mercure-imaging.org) on how to 
 
 <br>
 
-Install [virtual box](https://www.virtualbox.org/) and [vagrant](https://www.vagrantup.com/) and follow jupyter notebook tutorial *tutorial_mercure-totalsegmentator.ipynb* (<1hr to complete).
+Install [virtual box](https://www.virtualbox.org/) and [vagrant](https://www.vagrantup.com/) and follow jupyter notebook tutorial *tutorial_mercure-totalsegmentator.ipynb* (less than 1hr to complete).
 
 <br>
 
