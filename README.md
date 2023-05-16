@@ -17,7 +17,7 @@ Follow instructions on [Mercure website](https://mercure-imaging.org) on how to 
 <br>
 
 
-## Quickly deploy test environment and run totalsegmentator module
+## Rapidly deploy in new Mercure test environment and run totalsegmentator module
 
 <br>
 
