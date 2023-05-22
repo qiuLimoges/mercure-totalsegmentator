@@ -12,7 +12,7 @@ The current version of the module is configured to run the TotalSegmentator at a
 
 
 ## Add module to existing Mercure installation
-Follow instructions on [Mercure website](https://mercure-imaging.org) on how to add a new module. Use the docker tag *mercureimaging/mercure-totalsegmentator*.
+Follow instructions on [Mercure website](https://mercure-imaging.org) on how to add a new module. Use the docker tag [*mercureimaging/mercure-totalsegmentator*](./mercureimaging/mercure-totalsegmentator).
 
 <br>
 
