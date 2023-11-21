@@ -1,5 +1,6 @@
 import logging
 import os
+import torch
 import shutil
 import subprocess
 from pathlib import Path
@@ -44,9 +45,17 @@ class TotalSegmentatorOperator(Operator):
         if not os.path.exists(nii_seg_output_path):
             os.makedirs(nii_seg_output_path)
 
+        print("Checking device...")
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        print("device being used:", device)
+
         # Run TotalSegmentator
-        #subprocess.run(["TotalSegmentator", "-i", nii_input_file, "-o", nii_seg_output_path,"--ml"])
-        subprocess.run(["TotalSegmentator", "-i", nii_input_file, "-o", nii_seg_output_path,"--fast","--ml"])
+        if device == torch.device("cuda"):
+            print("running full version")
+            subprocess.run(["TotalSegmentator", "-i", nii_input_file, "-o", nii_seg_output_path,"--ml"])
+        else:
+            print("running fast version")
+            subprocess.run(["TotalSegmentator", "-i", nii_input_file, "-o", nii_seg_output_path,"--fast","--ml"])
         
 
         logging.info(f"Performed TotalSegmentator processing")

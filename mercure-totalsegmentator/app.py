@@ -15,6 +15,7 @@
 
 import logging
 import monai.deploy.core as md
+import torch
 from monai.deploy.core import (
     Application,
     DataPath,
@@ -35,7 +36,7 @@ from rtstruct_writer_operator import RTStructWriterOperator
 
 from monai.deploy.core import Application, resource
 
-@md.resource(cpu=1)
+# @md.resource(gpu=1)
 class TotalSegmentatorApp(Application):
     """
     TotalSegmentator - segmentation of 104 anatomical structures in CT images.
