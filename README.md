@@ -46,3 +46,15 @@ Segmentations are written to specified output directory in three different forma
 
 
 ![image.png](seg_image.png)
+
+<br>
+<br>
+
+## Acknowledgments
+
+<br>
+MAP operators and code adapted from GSTT-CSC TotalSegmentator-AIDE repository: https://github.com/GSTT-CSC/TotalSegmentator-AIDE
+<br>
+
+
+
