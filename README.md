@@ -1,3 +1,6 @@
+17/07/2024: 
+I want only to RT structure exportation. (QIU Hao)
+
 # **mercure-totalsegmentator**
 <br>
 
