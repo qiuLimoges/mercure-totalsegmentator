@@ -1,4 +1,4 @@
-name: mercure-totalsegmentator
+name: totalsegmentator-rtstructure
 channels:
   - conda-forge
 dependencies:
